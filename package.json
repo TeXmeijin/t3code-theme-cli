@@ -1,0 +1,42 @@
+{
+  "name": "t3-theme-cli",
+  "version": "0.2.0",
+  "description": "Built on T3 Code's theme system and CLI: switch colors to match your mood or time of day, and easily add and manage custom themes.",
+  "type": "module",
+  "bin": {
+    "t3-theme": "src/cli.mjs"
+  },
+  "engines": {
+    "node": ">=22.16"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/cli.mjs && node --check src/library.mjs && node --check src/theme.mjs && node --check src/t3.mjs && node --check src/builtins.mjs && node --check src/prompt.mjs && node --check src/jsonc.mjs && node --check src/vscode.mjs",
+    "check:package": "node scripts/check-package.mjs"
+  },
+  "files": [
+    "src",
+    "CONTRIBUTING.md"
+  ],
+  "license": "MIT",
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeXmeijin/t3code-theme-cli.git"
+  },
+  "homepage": "https://github.com/TeXmeijin/t3code-theme-cli#readme",
+  "bugs": {
+    "url": "https://github.com/TeXmeijin/t3code-theme-cli/issues"
+  },
+  "author": "TeXmeijin",
+  "keywords": [
+    "t3-code",
+    "theme",
+    "cli",
+    "terminal",
+    "custom-theme"
+  ]
+}
